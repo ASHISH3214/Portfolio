@@ -27,7 +27,7 @@
 </head> 
 
 
-<body class="light-mode">
+<body class="light-mode" id="myButton">
 	
 	<div class="container-fluid">
 			
@@ -35,7 +35,10 @@
 				<div class="container-fluid">
 					<div class="top-bar text-center position-relative">
 						<div class="top-bar-inner">
+							<a class="btn btn-secondary top-bar-cta" onclick="changeClass()" >Mode</a>
+					
 							<ul class="social-list list-inline mx-auto">
+					
 								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://github.com/ASHISH3214/" target="_blank"><i class="fa-brands fa-github fa-fw"></i></a></li>
 								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://www.linkedin.com/in/ashish-rathor-87b784b6/" target="_blank"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
 								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://www.hackerrank.com/profile/rathora34" target="_blank"><i class="fa-brands fa-hackerrank"></i></a></li>
@@ -112,7 +115,7 @@
 										    <article class="resume-timeline-item position-relative pb-5">
 											    
 											    <div class="resume-timeline-item-header mb-2">
-											        <h3 class="resume-position-title mb-1"><i class="fa-solid fa-diagram-project" style="color: darkcyan"></i><a style="color: black;" href="https://github.com/ASHISH3214/Banking-App-api"> Banking-App Service</a></h3>
+											        <h3 class="resume-position-title mb-1"> <a  href="https://github.com/ASHISH3214/Banking-App-api" target="_blank"><i class="fa-solid fa-diagram-project" style="color: darkcyan"></i> </a> Banking-App Service</h3>
 
 											    </div><!--//resume-timeline-item-header-->
 											    <div class="resume-timeline-item-desc">
@@ -133,7 +136,7 @@
 											<article class="resume-timeline-item position-relative pb-5"></article>
 											    
 											    <div class="resume-timeline-item-header mb-2">
-											        <h2 class="resume-position-title mb-1"><i class="fa-solid fa-diagram-project" style="color: darkcyan"></i><a style="color: black;" href="https://github.com/ASHISH3214/Hotel-Rating-Services"> Hotel-Rating Service </a></h2>
+											        <h2 class="resume-position-title mb-1"><a href="https://github.com/ASHISH3214/Hotel-Rating-Services"><i class="fa-solid fa-diagram-project" style="color: darkcyan"></i></a> Hotel-Rating Service</h2>
 
 											    </div><!--//resume-timeline-item-header-->
 											    <div class="resume-timeline-item-desc">
@@ -341,5 +344,18 @@
 		<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
 		<small class="copyright">Ashish Rathor <i class="fa-brands fa-java"></i> <a class="theme-link"></a> Java Developer</small>
 	</footer>
-
+	 <script>
+        function changeClass() {
+			let class_name = document.getElementById('myButton').className;
+			if(class_name==="light-mode"){
+            document.getElementById('myButton')
+                .className = "dark-mode";
+		}
+			else {
+			document.getElementById('myButton')
+                .className = "light-mode";
+			}	
+        }
+    </script>
 </body>
+</html>
